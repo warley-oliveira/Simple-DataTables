@@ -1385,7 +1385,7 @@ export class DataTable {
                         data: []
                     }
 
-                    json.forEach((data, i) => {
+                    json.data.forEach((data, i) => {
                         obj.data[i] = []
                         Object.entries(data).forEach(([column, value]) => {
                             if (!obj.headings.includes(column)) {
